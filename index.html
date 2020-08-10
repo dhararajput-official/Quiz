@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="showQuestion(0); ">
+
+  <div class="containe">
+    <div class="card text-center mx-auto mt-5">
+        <div class="card-header " id="userName"><script>document.write(sessionStorage.getItem("name").toUpperCase());</script> 
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" id="questionElement">Question Will Be here</h5>
+          <p class="card-text options" onclick="activeClass(this)" class="">Option 1</p>
+          <p class="card-text options" onclick="activeClass(this)" class="">Option 2</p>
+          <p class="card-text options" onclick="activeClass(this)" class=""> Option 3</p>
+          <p class="card-text options" onclick="activeClass(this)" class=""> Option 4</p>
+          <a href="#" class="btn btn-primary btnNext" onclick="nextQuestion();">Next Question</a>
+        </div>
+        <div class="card-footer text-muted">
+          2 days ago
+        </div>
+      </div>
+    </div>
+
+      <script src="app.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+.card{
+            width:500px;
+            margin: 0 auto;
+           background-color:none;
+}
+
+
+
+.options{
+        margin-top:20px;
+}
+
+.options:hover{
+    background-color: lightblue;
+}
+
+.active{
+    background-color: lightblue;
+}
